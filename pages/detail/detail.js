@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    detailObj:{}
+    detailObj:{},
+    isCollected:false
   },
 
   /**
@@ -19,6 +20,19 @@ Page({
       detailObj: datas.list_data[index]
     });
     // console.log(options);
+  },
+
+  handleCollection(){
+    this.setData({
+      isCollected: !this.data.isCollected
+    });
+
+    let title=this.data.isCollected?"收藏成功":"取消收藏"
+    wx.showToast({
+      title,
+      icon: 'success',
+      duration: 2000
+    })
   },
 
   /**
