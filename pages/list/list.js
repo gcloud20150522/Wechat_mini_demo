@@ -19,7 +19,13 @@ Page({
     });
     
   },
-  
+  swiperClickHandle(e){
+    let index = e.target.dataset.index;
+    console.log(index);
+    wx.navigateTo({
+      url: '/pages/detail/detail?index=' + index,
+    })
+  },
 
   listTaphandle(e){
     //console.log(e);
@@ -29,6 +35,7 @@ Page({
       url: '/pages/detail/detail?index='+index,
     })
   },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
