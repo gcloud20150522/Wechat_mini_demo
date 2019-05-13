@@ -1,0 +1,36 @@
+<!--pages/list/list.wxml-->
+<!-- <import src="/pages/template/template.wxml"/> -->
+<view>
+  <swiper indicator-dots indicator-color="yellowgreen" indicator-active-color="red">
+    <swiper-item >
+      <image src='/images/detail/carousel/01.jpg'></image>
+    </swiper-item>
+    <swiper-item >
+      <image src='/images/detail/carousel/02.jpg'></image>
+    </swiper-item>
+    <swiper-item >
+      <image src='/images/detail/carousel/03.jpg'></image>
+    </swiper-item>
+  </swiper>
+  
+  <view wx:for="{{dataArr}}" wx:key="{{index}}" bindtap="listTaphandle" data-index="{{index}}">
+    <!-- <template is="temItem" data="{{...item}}"/> -->
+    <view class='temContainer'>
+    <view class='userInfo'>
+      <image src='{{item.avatar}}'></image>
+      <text>{{item.date}}</text>
+    </view>
+    <text class='title'>{{item.title}}</text>
+    <image src='{{item.detail_img}}' class='banner'></image>
+    <text class='content'>{{item.detail_content}}</text>
+    <view class='follow' >
+      <image src='{{item.detail_love_image1}}'></image>
+      <text decode="{{true}}">{{item.love_count}}&nbsp;</text>
+      
+      <image src='{{item.detail_love_image2}}'></image>
+      <text>{{item.attention_count}}</text>
+    </view>
+  </view>
+  </view>
+  
+</view>

@@ -1,0 +1,18 @@
+<template name="temItem">
+  <view class='temContainer'>
+    <view class='userInfo'>
+      <image src='{{avatar}}'></image>
+      <text>{{date}}</text>
+    </view>
+    <text class='title'>{{title}}</text>
+    <image src='{{detail_img}}' class='banner'></image>
+    <text class='content'>{{detail_content}}</text>
+    <view class='follow' >
+      <image src='{{detail_love_image1}}'></image>
+      <text decode="{{true}}">{{love_count}}&nbsp;</text>
+      
+      <image src='{{detail_love_image2}}'></image>
+      <text>{{attention_count}}</text>
+    </view>
+  </view>
+</template>

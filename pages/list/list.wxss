@@ -1,0 +1,55 @@
+/* pages/list/list.wxss */
+/* @import '/pages/template/template.wxss'; */
+swiper{
+  width: 100%;
+  height:400rpx;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+
+/* list */
+.temContainer{
+  display: flex;
+  flex-direction: column;
+  /* border-top: 1rpx solid black; */
+  border-bottom: 1rpx solid black;
+  padding:20rpx 0;
+}
+.userInfo{
+  padding: 10rpx;
+}
+.userInfo image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.userInfo text{
+  font-size: 32rpx;
+}
+.title{
+  margin-left: 10rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+}
+.banner{
+  width: 100%;
+  height: 460rpx;
+}
+.content{
+  text-indent: 1em;
+  font-size: 32rpx;
+}
+.follow image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 5rpx;
+  vertical-align: middle;
+}
+.follow text{
+  font-size: 28rpx;
+}
